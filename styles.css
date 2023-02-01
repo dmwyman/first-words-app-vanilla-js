@@ -1,0 +1,21 @@
+/* color palette (color-blind friendly)
+blue: #0077BB / 0,119,187 
+cyan: #33BBEE / 51, 187, 238
+teal: #009988 / 0, 153, 136
+orange: #EE7733 / 238, 119, 51
+red: #CC3311 / 204, 51, 17
+magenta: #EE3377 / 238, 51, 119
+grey: #BBBBBB / 187, 187, 187
+ingido: #332288 / 51, 34, 136 
+ */
+
+/* .body-container{
+ display: grid;
+ grid-template-areas: ;
+} */
+.navbar-links-list {
+  list-style-type: none;
+}
+.main-title {
+  color: #332288;
+}
