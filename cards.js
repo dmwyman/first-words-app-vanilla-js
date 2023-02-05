@@ -1,96 +1,107 @@
+import { v4 as uuidv4 } from 'uuid'
 // individual cards as objects with 3 properties: word, image, ID
-const card_001_dog = {
+
+const card_dog = {
   word: `Dog`,
   // TODO: ADD image property and find an image
-  ID: 001,
+  order: 001,
+  ID: uuidv4(),
 }
 
-const card_002_car = {
+const card_car = {
   word: `Car`,
   // TODO: ADD image property and find an image
-  ID: 002,
+  order: 002,
+  ID: uuidv4(),
 }
 
-const card_003_cow = {
+const card_cow = {
   word: `Cow`,
   // TODO: ADD image property and find an image
-  ID: 003,
+  order: 003,
+  ID: uuidv4(),
 }
 
-const card_004_banana = {
+const card_banana = {
   word: `Banana`,
   // TODO: ADD image property and find an image
-  ID: 004,
+  order: 004,
+  ID: uuidv4(),
 }
 
-const card_005_apple = {
+const card_apple = {
   word: `Apple`,
   // TODO: ADD image property and find an image
-  ID: 005,
+  order: 005,
+  ID: uuidv4(),
 }
 
-const card_006_table = {
+const card_table = {
   word: `Table`,
   // TODO: ADD image property and find an image
-  ID: 006,
+  order: 006,
+  ID: uuidv4(),
 }
 
-const card_007_window = {
+const card_window = {
   word: `Window`,
   // TODO: ADD image property and find an image
-  ID: 007,
+  order: 007,
+  ID: uuidv4(),
 }
 
-const card_008_clock = {
+const card_clock = {
   word: `Clock`,
   // TODO: ADD image property and find an image
-  ID: 008,
+  order: 008,
+  ID: uuidv4(),
 }
 
-const card_009_ball = {
+const card_ball = {
   word: `Ball`,
   // TODO: ADD image property and find an image
-  ID: 009,
+  order: 009,
+  ID: uuidv4(),
 }
 
-const card_010_book = {
+const card_book = {
   word: `Book`,
   // TODO: ADD image property and find an image
-  ID: 010,
+  order: 010,
+  ID: uuidv4(),
 }
 
-const card_011_train = {
+const card_train = {
   word: `Train`,
   // TODO: ADD image property and find an image
-  ID: 011,
+  order: 011,
+  ID: uuidv4(),
 }
 
-const card_012_plane = {
+const card_plane = {
   word: `plane`,
   // TODO: ADD image property and find an image
-  ID: 012,
+  order: 012,
+  ID: uuidv4(),
 }
 
-const card_013_ear = {
+const card_ear = {
   word: `Ear`,
   // TODO: ADD image property and find an image
-  ID: 013,
+  order: 013,
+  ID: uuidv4(),
 }
 
-const card_014_nose = {
+const card_nose = {
   word: `Nose`,
   // TODO: ADD image property and find an image
-  ID: 014,
+  order: 014,
+  ID: uuidv4(),
 }
 
-const card_015_mouth = {
+const card_mouth = {
   word: `Mouth`,
   // TODO: ADD image property and find an image
-  ID: 015,
+  order: 015,
+  ID: uuidv4(),
 }
-
-console.log(card_007_window.word)
-console.log(card_008_clock.word)
-
-console.log(card_007_window.ID)
-console.log(card_008_clock.ID)
