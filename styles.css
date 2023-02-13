@@ -13,9 +13,23 @@ ingido: #332288 / 51, 34, 136
  display: grid;
  grid-template-areas: ;
 } */
+body {
+  display: grid;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main {
+  display: grid;
+}
 .navbar-links-list {
   list-style-type: none;
 }
 .main-title {
   color: #332288;
+}
+.start-btn {
+  /* grid-area: ; */
+  border-color: #332288;
+  background-color: #ee3377;
+  /* TODO: hover background-color change from #332288 to  #ee3377*/
+  color: white;
 }
