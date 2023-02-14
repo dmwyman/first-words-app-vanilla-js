@@ -3,6 +3,6 @@
 
 # Steps to start the app
 $ npm install
-$ npm build 
-$ npm dev-server
+$ npm run build 
+$ npm run dev-server
 # then navigate to http://localhost:8080/ in your browser

@@ -1,5 +1,5 @@
 const path = require("path");
-
+const isProd = false;
 module.exports = {
   mode: "none",
   entry: "./app.js",
@@ -7,6 +7,7 @@ module.exports = {
     path: __dirname + "/dist",
     filename: "bundle.js",
   },
+  devtool: isProd ? "source-map" : false,
   devServer: {
     static: path.join(__dirname, "dist"),
   },
