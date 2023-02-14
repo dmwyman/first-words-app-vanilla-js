@@ -1,12 +1,12 @@
 import { v4 as uuidv4 } from 'uuid'
-// individual cards as objects with 3 properties: word, image, ID
 
 const cardContainer = document.querySelector('.card-container')
 
+// individual cards as objects with 5 properties: word, wordSpanish, image, order, ID
 const card_dog = {
   word: 'Dog',
   wordSpanish: 'Perro',
-  img: './imgs/dog_Image',
+  img: './imgs/dog_Image', //TODO: check if img work
   order: 001,
   ID: uuidv4(),
 }

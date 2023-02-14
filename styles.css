@@ -9,6 +9,7 @@ grey: #BBBBBB / 187, 187, 187
 ingido: #332288 / 51, 34, 136 
  */
 
+/* TODO: CREATE grid layout of whole  */
 /* .body-container{
  display: grid;
  grid-template-areas: ;
@@ -29,7 +30,13 @@ main {
 .start-btn {
   /* grid-area: ; */
   border-color: #332288;
-  background-color: #ee3377;
-  /* TODO: hover background-color change from #332288 to  #ee3377*/
+  background-color: #332288;
+
   color: white;
 }
+
+.start-btn:hover {
+  background-color: #ee3377;
+}
+
+/* TODO: ADD Media Queries for Tablet and Desktop */

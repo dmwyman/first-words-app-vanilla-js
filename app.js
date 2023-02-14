@@ -1,3 +1,5 @@
+// Navigation
+
 // array of cards = the card stack
 const cardStack = [
   card_dog,
@@ -16,6 +18,14 @@ const cardStack = [
   card_nose,
   card_mouth,
 ]
+// TODO: use document.queryselector for all the cards
+
+// Main (title, btn, cards)
+const startBtn = document.querySelector('.start-btn')
+startBtn.addEventListener('click', () => {
+  // TODO: display card_dog
+  console.log('Clicked')
+})
 
 // current card template
-// const currentCard =
+const currentCard = document.querySelector('.card-container')
