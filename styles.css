@@ -18,25 +18,64 @@ body {
   display: grid;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* ************************************************** */
+/* NAVIGATION */
+/* ************************************************** */
+header {
+  background-color: #332288;
+}
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.navbar-link a {
+  color: #ee3377;
+  text-decoration: none;
+}
+
+/* ************************************************** */
+/* MAIN */
+/* ************************************************** */
 main {
   display: grid;
 }
-.navbar-links-list {
-  list-style-type: none;
-}
 .main-title {
   color: #332288;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
 }
 .start-btn {
   /* grid-area: ; */
+  font-size: 36px;
   border-color: #332288;
   background-color: #332288;
-
   color: white;
 }
 
-.start-btn:hover {
-  background-color: #ee3377;
+/* ************************************************** */
+/* ************** Desktop media query *************** */
+/* ************************************************** */
+@media screen and (min-width: 590px) {
+  /* NAVIGATION */
+  .navbar-links {
+    /* justify-content: flex-start; */
+  }
+  .navbar-link:hover {
+    color: #ee7733;
+  }
+  /* MAIN */
+  .start-btn:hover {
+    background-color: #ee3377;
+  }
 }
-
-/* TODO: ADD Media Queries for Tablet and Desktop */
+/* ************************************************** */
+/* ************** Tablet media query *************** */
+/* ************************************************** */
