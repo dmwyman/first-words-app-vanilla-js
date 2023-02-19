@@ -14,6 +14,9 @@ ingido: #332288 / 51, 34, 136
  display: grid;
  grid-template-areas: ;
 } */
+
+/* GLOBAL STYLES */
+
 body {
   display: grid;
   grid-template-areas:
@@ -22,6 +25,11 @@ body {
     'footer footer footer';
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.hidden {
+  display: none;
+}
+
 /* ************************************************** */
 /* NAVIGATION */
 /* ************************************************** */
@@ -55,16 +63,28 @@ main {
   justify-content: center;
 }
 
-.btn-container {
+.start-container {
   display: flex;
   justify-content: center;
 }
-.start-btn {
+.start-link {
   /* grid-area: ; */
   font-size: 36px;
   border-color: #332288;
   background-color: #332288;
-  color: #009988;
+  color: #ee3377;
+  text-decoration: none;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ************** Cards Template *************** */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.btn-container {
+  display: flex;
+}
+.previous-btn,
+.next-btn {
+  display: flex;
 }
 
 /* ************************************************** */
@@ -72,6 +92,8 @@ main {
 /* ************************************************** */
 footer {
   grid-area: footer;
+  background-color: #332288;
+  color: #ee3377;
 }
 
 /* ************************************************** */
@@ -86,8 +108,9 @@ footer {
     color: #009988;
   }
   /* MAIN */
-  .start-btn:hover {
+  .start-link:hover {
     background-color: #ee3377;
+    color: #332288;
   }
 }
 /* ************************************************** */
