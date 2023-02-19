@@ -36,12 +36,30 @@ const cardStack = [
 ];
 // TODO: use document.queryselector for all the cards
 
+// **********************
 // Main (title, btn, cards)
+<<<<<<< HEAD
 const startBtn = document.querySelector(".start-btn");
 startBtn.addEventListener("click", () => {
   // TODO: display card_dog
   console.log("Clicked");
 });
+=======
+// const startBtn = document.querySelector('.start-btn')
+>>>>>>> main
 
+// startBtn.addEventListener('click', () => {
+//   // TODO: display card_dog
+//   // TODO: display: none for start-btn
+//   console.log('Clicked')
+// })
+
+// **********************
 // current card template
+<<<<<<< HEAD
 const currentCard = document.querySelector(".card-container");
+=======
+const currentCard = document.querySelector('.card-container')
+
+// TODO: TRY TO SEE IF I NEED SINGLE JS FILE
+>>>>>>> main

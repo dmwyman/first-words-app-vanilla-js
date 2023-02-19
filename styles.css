@@ -14,29 +14,105 @@ ingido: #332288 / 51, 34, 136
  display: grid;
  grid-template-areas: ;
 } */
+
+/* GLOBAL STYLES */
+
 body {
   display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.hidden {
+  display: none;
+}
+
+/* ************************************************** */
+/* NAVIGATION */
+/* ************************************************** */
+header {
+  background-color: #332288;
+  grid-area: header;
+}
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+.navbar-link a {
+  color: #ee3377;
+  text-decoration: none;
+}
+
+/* ************************************************** */
+/* MAIN */
+/* ************************************************** */
 main {
   display: grid;
-}
-.navbar-links-list {
-  list-style-type: none;
+  grid-area: main;
+  background-color: #009988;
 }
 .main-title {
   color: #332288;
+  display: flex;
+  justify-content: center;
 }
-.start-btn {
+
+.start-container {
+  display: flex;
+  justify-content: center;
+}
+.start-link {
   /* grid-area: ; */
+  font-size: 36px;
   border-color: #332288;
   background-color: #332288;
-
-  color: white;
+  color: #ee3377;
+  text-decoration: none;
 }
 
-.start-btn:hover {
-  background-color: #ee3377;
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ************** Cards Template *************** */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.btn-container {
+  display: flex;
+}
+.previous-btn,
+.next-btn {
+  display: flex;
 }
 
-/* TODO: ADD Media Queries for Tablet and Desktop */
+/* ************************************************** */
+/* ************** Footer *************** */
+/* ************************************************** */
+footer {
+  grid-area: footer;
+  background-color: #332288;
+  color: #ee3377;
+}
+
+/* ************************************************** */
+/* ************** Desktop media query *************** */
+/* ************************************************** */
+@media screen and (min-width: 590px) {
+  /* NAVIGATION */
+  .navbar-links {
+    /* justify-content: flex-start; */
+  }
+  .navbar-link:hover {
+    color: #009988;
+  }
+  /* MAIN */
+  .start-link:hover {
+    background-color: #ee3377;
+    color: #332288;
+  }
+}
+/* ************************************************** */
+/* ************** Tablet media query *************** */
+/* ************************************************** */
