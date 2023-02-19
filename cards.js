@@ -1,4 +1,5 @@
 // import { v4 as uuidv4 } from 'uuid'
+// import {dog_Image} from imgs
 
 const cardContainer = document.querySelector('.card-container')
 
@@ -6,7 +7,7 @@ const cardContainer = document.querySelector('.card-container')
 const card_dog = {
   word: 'Dog',
   wordSpanish: 'Perro',
-  img: './imgs/dog_Image', //TODO: check if img work
+  img: './imgs/dog_Image.avif', //TODO: check if img works
   order: 001,
   // ID: uuidv4(),
 }
