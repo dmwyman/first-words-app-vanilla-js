@@ -16,6 +16,14 @@ ingido: #332288 / 51, 34, 136
 } */
 
 /* GLOBAL STYLES */
+.skip-link {
+  left: -100%;
+  position: absolute;
+}
+
+.skip-link:focus {
+  left: 50%;
+}
 
 body {
   display: grid;
@@ -102,6 +110,7 @@ footer {
 @media screen and (min-width: 590px) {
   /* NAVIGATION */
   .navbar-links {
+    display: flex;
     /* justify-content: flex-start; */
   }
   .navbar-link:hover {
