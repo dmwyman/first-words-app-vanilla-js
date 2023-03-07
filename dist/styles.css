@@ -25,6 +25,12 @@ ingido: #332288 / 51, 34, 136
   left: 50%;
 }
 
+html,
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 body {
   display: grid;
   grid-template-areas:
@@ -42,7 +48,7 @@ body {
 /* NAVIGATION */
 /* ************************************************** */
 header {
-  background-color: #332288;
+  background-color: white;
   grid-area: header;
 }
 .navbar-links {
@@ -52,8 +58,12 @@ header {
   align-items: center;
   padding: 5%;
 }
+.navbar-link {
+  padding: 2.5%;
+}
+
 .navbar-link a {
-  color: #ee3377;
+  color: #332288;
   text-decoration: none;
 }
 
@@ -63,10 +73,14 @@ header {
 main {
   display: grid;
   grid-area: main;
-  background-color: #009988;
+  /* background-color: #009988; */
+  background-color: #ffffff;
 }
 .main-title {
-  color: #332288;
+  color: #009988;
+  background-color: #332288;
+  padding: 10%;
+  /* TODO: remove white space on left/right sides */
   display: flex;
   justify-content: center;
 }
@@ -78,21 +92,38 @@ main {
 .start-link {
   /* grid-area: ; */
   font-size: 36px;
+  border-style: solid;
   border-color: #332288;
-  background-color: #332288;
-  color: #ee3377;
+  background-color: #009988;
+  color: #ffffff;
+  border-radius: 5%;
   text-decoration: none;
+  padding: 2.5%;
 }
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ************** Cards Template *************** */
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* BUTTONS & BTN CONTAINERS */
+.prev-next-btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: solid; */
+  border-color: #ee3377;
+  background-color: #009988;
+}
 .btn-container {
   display: flex;
+  justify-content: center;
 }
 .previous-btn,
 .next-btn {
   display: flex;
+  padding: 2.5%;
+  background-color: #ee3377;
+  color: white;
 }
 
 /* ************************************************** */
@@ -100,8 +131,8 @@ main {
 /* ************************************************** */
 footer {
   grid-area: footer;
-  background-color: #332288;
-  color: #ee3377;
+  background-color: #ffffff;
+  color: #332288;
 }
 
 /* ************************************************** */
@@ -113,13 +144,18 @@ footer {
     display: flex;
     /* justify-content: flex-start; */
   }
+
   .navbar-link:hover {
-    color: #009988;
+    background-color: #ee3377;
+    color: white;
+  }
+
+  .navbar-link a:hover {
+    color: white;
   }
   /* MAIN */
   .start-link:hover {
     background-color: #ee3377;
-    color: #332288;
   }
 }
 /* ************************************************** */

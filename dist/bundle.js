@@ -25,113 +25,112 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var uuid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 
-var cardContainer = document.querySelector(".card-container");
+var cardContainer = document.querySelector('.card-container');
 
 // individual cards as objects with 5 properties: word, wordSpanish, image, order, ID
 var card_dog = {
-  word: "Dog",
-  wordSpanish: "Perro",
-  img: "./imgs/dog_Image.avif",
-  //TODO: check if img work
-  order: "001",
+  word: 'Dog',
+  // wordSpanish: 'Perro',
+  //TODO: ADD img + alt
+  position: '001',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_car = {
-  word: "Car",
-  wordSpanish: "Auto",
+  word: 'Car',
+  // wordSpanish: 'Auto',
   // TODO: ADD image property and find an image
-  order: "002",
+  position: '002',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_cow = {
-  word: "Cow",
-  wordSpanish: "Vaca",
+  word: 'Cow',
+  // wordSpanish: 'Vaca',
   // TODO: ADD image property and find an image
-  order: "003",
+  position: '003',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_banana = {
-  word: "Banana",
-  wordSpanish: "Banana",
+  word: 'Banana',
+  // wordSpanish: 'Banana',
   // TODO: ADD image property and find an image
-  order: "004",
+  position: '004',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_apple = {
-  word: "Apple",
-  wordSpanish: "Manzana",
+  word: 'Apple',
+  // wordSpanish: 'Manzana',
   // TODO: ADD image property and find an image
-  order: "005",
+  position: '005',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_table = {
-  word: "Table",
-  wordSpanish: "Mesa",
+  word: 'Table',
+  // wordSpanish: 'Mesa',
   // TODO: ADD image property and find an image
-  order: "006",
+  position: '006',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_window = {
-  word: "Window",
-  wordSpanish: "Ventana",
+  word: 'Window',
+  // wordSpanish: 'Ventana',
   // TODO: ADD image property and find an image
-  order: "007",
+  position: '007',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_clock = {
-  word: "Clock",
-  wordSpanish: "Reloj",
+  word: 'Clock',
+  // wordSpanish: 'Reloj',
   // TODO: ADD image property and find an image
-  order: "008",
+  position: '008',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_ball = {
-  word: "Ball",
-  wordSpanish: "Balon",
+  word: 'Ball',
+  // wordSpanish: 'Balon',
   // TODO: ADD image property and find an image
-  order: "009",
+  position: '009',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_book = {
-  word: "Book",
-  wordSpanish: "Libro",
+  word: 'Book',
+  // wordSpanish: 'Libro',
   // TODO: ADD image property and find an image
-  order: "010",
+  position: '010',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_train = {
-  word: "Train",
-  wordSpanish: "Train",
+  word: 'Train',
+  // wordSpanish: 'Train',
   // TODO: ADD image property and find an image
-  order: "011",
+  position: '011',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_plane = {
-  word: "Plane",
-  wordSpanish: "Avión",
+  word: 'Plane',
+  // wordSpanish: 'Avión',
   // TODO: ADD image property and find an image
-  order: "012",
+  position: '012',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_ear = {
-  word: "Ear",
-  wordSpanish: "Oreja",
+  word: 'Ear',
+  // wordSpanish: 'Oreja',
   // TODO: ADD image property and find an image
-  order: "013",
+  position: '013',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_nose = {
-  word: "Nose",
-  wordSpanish: "Nariz",
+  word: 'Nose',
+  // wordSpanish: 'Nariz',
   // TODO: ADD image property and find an image
-  order: "014",
+  position: '014',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_mouth = {
-  word: "Mouth",
-  wordSpanish: "Boca",
+  word: 'Mouth',
+  // wordSpanish: 'Boca',
   // TODO: ADD image property and find an image
-  order: "015",
+  position: '015',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 
@@ -326,22 +325,53 @@ var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _cards__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-// Navigation
+/* harmony import */ var _cards_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+//Imported card objects
 
 // array of cards = the card stack
-var cardStack = [_cards__WEBPACK_IMPORTED_MODULE_0__.card_dog, _cards__WEBPACK_IMPORTED_MODULE_0__.card_car, _cards__WEBPACK_IMPORTED_MODULE_0__.card_cow, _cards__WEBPACK_IMPORTED_MODULE_0__.card_banana, _cards__WEBPACK_IMPORTED_MODULE_0__.card_apple, _cards__WEBPACK_IMPORTED_MODULE_0__.card_table, _cards__WEBPACK_IMPORTED_MODULE_0__.card_window, _cards__WEBPACK_IMPORTED_MODULE_0__.card_clock, _cards__WEBPACK_IMPORTED_MODULE_0__.card_ball, _cards__WEBPACK_IMPORTED_MODULE_0__.card_book, _cards__WEBPACK_IMPORTED_MODULE_0__.card_train, _cards__WEBPACK_IMPORTED_MODULE_0__.card_plane, _cards__WEBPACK_IMPORTED_MODULE_0__.card_ear, _cards__WEBPACK_IMPORTED_MODULE_0__.card_nose, _cards__WEBPACK_IMPORTED_MODULE_0__.card_mouth];
+var cardStack = [_cards_js__WEBPACK_IMPORTED_MODULE_0__.card_dog, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_car, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_cow, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_banana, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_apple, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_table, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_window, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_clock, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_ball, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_book, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_train, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_plane, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_ear, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_nose, _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_mouth];
 // TODO: use document.queryselector for all the cards
 
-// Main (title, btn, cards)
-var startBtn = document.querySelector(".start-btn");
-startBtn.addEventListener("click", function () {
+// **********************
+// Landing Page Start Button
+
+var startBtn = document.querySelector('.start-btn');
+startBtn.addEventListener('click', function () {
   // TODO: display card_dog
-  console.log("Clicked");
+  console.log('Clicked');
 });
 
+// **********************
+// CARD TEMPLATE PAGE
+// **********************
+var currentCardCount = 0;
+
+// **********************
+// Previous button
+var previousBtn = document.querySelector('.previous-btn');
+previousBtn.addEventListener('click', function () {
+  console.log("clicked");
+});
+
+// **********************
+// Next button
+
+// startBtn.addEventListener('click', () => {
+//   // TODO: display card_dog
+//   // TODO: display: none for start-btn
+//   console.log('Clicked')
+// })
+
+// **********************
 // current card template
-var currentCard = document.querySelector(".card-container");
+var currentCard = document.querySelector('.card-container');
+
+// **********************
+// Skip Link JS
+var skipLink = document.querySelector('.skip-link');
+skipLink.addEventListener('click', function (e) {
+  document.querySelector(skipLink.getAttribute('href')).focus();
+});
 })();
 
 /******/ })()

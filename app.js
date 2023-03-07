@@ -1,4 +1,4 @@
-// Navigation
+//Imported card objects
 import {
   card_dog,
   card_car,
@@ -15,7 +15,7 @@ import {
   card_ear,
   card_nose,
   card_mouth,
-} from './cards'
+} from './cards.js'
 // array of cards = the card stack
 const cardStack = [
   card_dog,
@@ -37,12 +37,29 @@ const cardStack = [
 // TODO: use document.queryselector for all the cards
 
 // **********************
-// Main (title, btn, cards)
+// Landing Page Start Button
+
 const startBtn = document.querySelector('.start-btn')
 startBtn.addEventListener('click', () => {
   // TODO: display card_dog
   console.log('Clicked')
 })
+
+// **********************
+// CARD TEMPLATE PAGE
+// **********************
+let currentCardCount = 0
+
+// **********************
+// Previous button
+const previousBtn = document.querySelector('.previous-btn')
+
+previousBtn.addEventListener('click', () => {
+  console.log(`clicked`)
+})
+
+// **********************
+// Next button
 
 // startBtn.addEventListener('click', () => {
 //   // TODO: display card_dog
