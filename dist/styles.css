@@ -70,6 +70,11 @@ header {
 /* ************************************************** */
 /* MAIN */
 /* ************************************************** */
+
+.body-container {
+  box-sizing: border-box;
+  margin: 0;
+}
 main {
   display: grid;
   grid-area: main;
@@ -80,7 +85,7 @@ main {
   color: #009988;
   background-color: #332288;
   padding: 10%;
-  /* TODO: remove white space on left/right sides */
+
   display: flex;
   justify-content: center;
 }
