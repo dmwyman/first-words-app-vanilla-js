@@ -6,7 +6,7 @@ const cardContainer = document.querySelector('.card-container')
 export const card_dog = {
   word: 'Dog',
   // wordSpanish: 'Perro',
-  //TODO: ADD img + alt
+  src: './imgs/dog_Image.avif',
   position: '001',
   ID: uuidv4(),
 }
@@ -14,7 +14,7 @@ export const card_dog = {
 export const card_car = {
   word: 'Car',
   // wordSpanish: 'Auto',
-  // TODO: ADD image property and find an image
+  src: './imgs/car_Image.avif',
   position: '002',
   ID: uuidv4(),
 }
@@ -22,7 +22,7 @@ export const card_car = {
 export const card_cow = {
   word: 'Cow',
   // wordSpanish: 'Vaca',
-  // TODO: ADD image property and find an image
+  src: './imgs/cow_Image.avif',
   position: '003',
   ID: uuidv4(),
 }
@@ -30,7 +30,7 @@ export const card_cow = {
 export const card_banana = {
   word: 'Banana',
   // wordSpanish: 'Banana',
-  // TODO: ADD image property and find an image
+  src: './imgs/banana_Image.avif',
   position: '004',
   ID: uuidv4(),
 }
@@ -38,7 +38,7 @@ export const card_banana = {
 export const card_apple = {
   word: 'Apple',
   // wordSpanish: 'Manzana',
-  // TODO: ADD image property and find an image
+  src: './imgs/apple_Image.avif',
   position: '005',
   ID: uuidv4(),
 }
@@ -46,7 +46,7 @@ export const card_apple = {
 export const card_table = {
   word: 'Table',
   // wordSpanish: 'Mesa',
-  // TODO: ADD image property and find an image
+  src: './imgs/table_Image.avif',
   position: '006',
   ID: uuidv4(),
 }
@@ -54,7 +54,7 @@ export const card_table = {
 export const card_window = {
   word: 'Window',
   // wordSpanish: 'Ventana',
-  // TODO: ADD image property and find an image
+  src: './imgs/window_Image.avif',
   position: '007',
   ID: uuidv4(),
 }
@@ -62,7 +62,7 @@ export const card_window = {
 export const card_clock = {
   word: 'Clock',
   // wordSpanish: 'Reloj',
-  // TODO: ADD image property and find an image
+  src: './imgs/clock_Image.avif',
   position: '008',
   ID: uuidv4(),
 }
@@ -70,7 +70,7 @@ export const card_clock = {
 export const card_ball = {
   word: 'Ball',
   // wordSpanish: 'Balon',
-  // TODO: ADD image property and find an image
+  src: './imgs/ball_Image.avif',
   position: '009',
   ID: uuidv4(),
 }
@@ -78,7 +78,7 @@ export const card_ball = {
 export const card_book = {
   word: 'Book',
   // wordSpanish: 'Libro',
-  // TODO: ADD image property and find an image
+  src: './imgs/book_Image.avif',
   position: '010',
   ID: uuidv4(),
 }
@@ -86,7 +86,7 @@ export const card_book = {
 export const card_train = {
   word: 'Train',
   // wordSpanish: 'Train',
-  // TODO: ADD image property and find an image
+  src: './imgs/train_Image.avif',
   position: '011',
   ID: uuidv4(),
 }
@@ -94,7 +94,7 @@ export const card_train = {
 export const card_plane = {
   word: 'Plane',
   // wordSpanish: 'Avión',
-  // TODO: ADD image property and find an image
+  src: './imgs/plane_Image.avif',
   position: '012',
   ID: uuidv4(),
 }
@@ -102,7 +102,7 @@ export const card_plane = {
 export const card_ear = {
   word: 'Ear',
   // wordSpanish: 'Oreja',
-  // TODO: ADD image property and find an image
+  src: './imgs/ear_Image.avif',
   position: '013',
   ID: uuidv4(),
 }
@@ -110,7 +110,7 @@ export const card_ear = {
 export const card_nose = {
   word: 'Nose',
   // wordSpanish: 'Nariz',
-  // TODO: ADD image property and find an image
+  src: './imgs/nose_Image.avif',
   position: '014',
   ID: uuidv4(),
 }
@@ -118,7 +118,7 @@ export const card_nose = {
 export const card_mouth = {
   word: 'Mouth',
   // wordSpanish: 'Boca',
-  // TODO: ADD image property and find an image
+  src: './imgs/mouth_Image.avif',
   position: '015',
   ID: uuidv4(),
 }

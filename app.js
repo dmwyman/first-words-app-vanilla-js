@@ -48,7 +48,13 @@ startBtn.addEventListener('click', () => {
 // **********************
 // CARD TEMPLATE PAGE
 // **********************
-let currentCardCount = 0
+// let currentCardCount = 0
+const cardContainer = document.querySelector('.card-container')
+const cardWordHeading = document.querySelector('.card-word-heading')
+const cardImg = document.querySelector('.card-img')
+
+cardWordHeading.textContent = card_dog.word
+// cardImg.classList.add = card_dog.src
 
 // **********************
 // Previous button

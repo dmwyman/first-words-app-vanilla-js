@@ -108,7 +108,36 @@ main {
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* ************** Cards Template *************** */
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ 
+/* TODO: display grid for card page */
+/* TODO: display image */
+
+/* BODY CONTAINER CARDS */
+.body-container-cards {
+  box-sizing: border-box;
+  margin: 0;
+  /* display: grid; */
+}
+
+/* TITLE */
+
+/* CARD CONTAINER */
+.card-container {
+  background-color: #ee3377;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  /* border: 5px;
+  border-color: #ee3377; */
+}
+
+.card-word-heading {
+  background-color: #009988;
+  color: white;
+}
+/* CARD WORD HEADING */
+
+/* CARD IMG */
 
 /* BUTTONS & BTN CONTAINERS */
 .prev-next-btn-container {
@@ -116,7 +145,7 @@ main {
   flex-direction: row;
   justify-content: space-between;
   /* border: solid; */
-  border-color: #ee3377;
+  border-color: #332288;
   background-color: #009988;
 }
 .btn-container {
@@ -127,7 +156,7 @@ main {
 .next-btn {
   display: flex;
   padding: 2.5%;
-  background-color: #ee3377;
+  background-color: #332288;
   color: white;
 }
 

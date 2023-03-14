@@ -31,105 +31,105 @@ var cardContainer = document.querySelector('.card-container');
 var card_dog = {
   word: 'Dog',
   // wordSpanish: 'Perro',
-  //TODO: ADD img + alt
+  src: './imgs/dog_Image.avif',
   position: '001',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_car = {
   word: 'Car',
   // wordSpanish: 'Auto',
-  // TODO: ADD image property and find an image
+  src: './imgs/car_Image.avif',
   position: '002',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_cow = {
   word: 'Cow',
   // wordSpanish: 'Vaca',
-  // TODO: ADD image property and find an image
+  src: './imgs/cow_Image.avif',
   position: '003',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_banana = {
   word: 'Banana',
   // wordSpanish: 'Banana',
-  // TODO: ADD image property and find an image
+  src: './imgs/banana_Image.avif',
   position: '004',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_apple = {
   word: 'Apple',
   // wordSpanish: 'Manzana',
-  // TODO: ADD image property and find an image
+  src: './imgs/apple_Image.avif',
   position: '005',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_table = {
   word: 'Table',
   // wordSpanish: 'Mesa',
-  // TODO: ADD image property and find an image
+  src: './imgs/table_Image.avif',
   position: '006',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_window = {
   word: 'Window',
   // wordSpanish: 'Ventana',
-  // TODO: ADD image property and find an image
+  src: './imgs/window_Image.avif',
   position: '007',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_clock = {
   word: 'Clock',
   // wordSpanish: 'Reloj',
-  // TODO: ADD image property and find an image
+  src: './imgs/clock_Image.avif',
   position: '008',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_ball = {
   word: 'Ball',
   // wordSpanish: 'Balon',
-  // TODO: ADD image property and find an image
+  src: './imgs/ball_Image.avif',
   position: '009',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_book = {
   word: 'Book',
   // wordSpanish: 'Libro',
-  // TODO: ADD image property and find an image
+  src: './imgs/book_Image.avif',
   position: '010',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_train = {
   word: 'Train',
   // wordSpanish: 'Train',
-  // TODO: ADD image property and find an image
+  src: './imgs/train_Image.avif',
   position: '011',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_plane = {
   word: 'Plane',
   // wordSpanish: 'Avión',
-  // TODO: ADD image property and find an image
+  src: './imgs/plane_Image.avif',
   position: '012',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_ear = {
   word: 'Ear',
   // wordSpanish: 'Oreja',
-  // TODO: ADD image property and find an image
+  src: './imgs/ear_Image.avif',
   position: '013',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_nose = {
   word: 'Nose',
   // wordSpanish: 'Nariz',
-  // TODO: ADD image property and find an image
+  src: './imgs/nose_Image.avif',
   position: '014',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
 var card_mouth = {
   word: 'Mouth',
   // wordSpanish: 'Boca',
-  // TODO: ADD image property and find an image
+  src: './imgs/mouth_Image.avif',
   position: '015',
   ID: (0,uuid__WEBPACK_IMPORTED_MODULE_0__["default"])()
 };
@@ -344,7 +344,12 @@ startBtn.addEventListener('click', function () {
 // **********************
 // CARD TEMPLATE PAGE
 // **********************
-var currentCardCount = 0;
+// let currentCardCount = 0
+var cardContainer = document.querySelector('.card-container');
+var cardWordHeading = document.querySelector('.card-word-heading');
+var cardImg = document.querySelector('.card-img');
+cardWordHeading.textContent = _cards_js__WEBPACK_IMPORTED_MODULE_0__.card_dog.word;
+// cardImg.classList.add = card_dog.src
 
 // **********************
 // Previous button
